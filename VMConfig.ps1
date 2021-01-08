@@ -17,8 +17,6 @@ Try
 Try
     {
     Write-EventLog -LogName $EventlogName -Source $EventlogSource -EventID 25101 -EntryType Information -Message "Loading modules and attempting to connect to Azure"
-    $password = ConvertTo-SecureString “password” -AsPlainText -Force
-    $Cred = New-Object System.Management.Automation.PSCredential (“userID”, $password)
 
     Install-PackageProvider -Name NuGet -scope currentuser -Force 
     Install-Module -Name Az.Storage -scope currentuser -Force
