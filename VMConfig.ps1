@@ -1,5 +1,3 @@
-﻿#set-executionpolicy Unrestricted -scope currentuser -Force
-
 Try
     {
     $EventlogName = "HigginsonConsultancy"
